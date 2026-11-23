@@ -22,3 +22,6 @@ Composio connectivity was tested and exposed meta-tools only; no app-specific to
 3. Run at least one read-only authenticated API/MCP smoke test per integration.
 4. Record timestamp, account tier, scopes, endpoint, result and failure mode.
 5. Recalculate buildability only after those checks.
+
+## Live demo link :
+https://atz-7.github.io/Appintel-ai/
