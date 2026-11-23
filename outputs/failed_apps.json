@@ -1,0 +1,27 @@
+{
+    "last_updated": "2026-11-23T20:12:43.412578+00:00",
+    "total_failures": 3,
+    "failed_applications": [
+        {
+            "app_name": "Zoho CRM",
+            "category": "CRM & Sales",
+            "error": "All Gemini models failed. Last error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+            "status": "failed",
+            "last_attempt": "2026-11-23T20:10:52.726748+00:00"
+        },
+        {
+            "app_name": "Close",
+            "category": "CRM & Sales",
+            "error": "All Gemini models failed. Last error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+            "status": "failed",
+            "last_attempt": "2026-11-23T20:11:24.049046+00:00"
+        },
+        {
+            "app_name": "Copper",
+            "category": "CRM & Sales",
+            "error": "All Gemini models failed. Last error: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+            "status": "failed",
+            "last_attempt": "2026-11-23T20:11:47.016314+00:00"
+        }
+    ]
+}

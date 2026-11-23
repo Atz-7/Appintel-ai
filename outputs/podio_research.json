@@ -1,0 +1,33 @@
+{
+    "app_name": "Podio",
+    "category": "CRM & Sales",
+    "description": "Podio is a flexible work management and collaboration platform that lets teams build custom apps, workspaces, and workflows for project management, CRM, and internal operations.",
+    "auth_methods": [
+        "OAuth 2.0"
+    ],
+    "access_model": "Public self-serve",
+    "api_type": [
+        "REST",
+        "Webhooks"
+    ],
+    "api_breadth": "The Podio API offers complete programmable access to all Podio functionality including applications, items, tasks, workspaces, users, files, comments, and webhooks.",
+    "existing_mcp": "An official MCP server exists provided directly by Progress Software at https://mcp.podio.com in beta, and a third-party implementation exists via Activepieces.",
+    "buildability": "Highly practical. The platform provides comprehensive REST documentation, multiple official client libraries, webhooks, and explicit OAuth 2.0 authentication flows.",
+    "main_blocker": null,
+    "evidence_urls": [
+        "https://apis.io/providers/podio",
+        "https://developers.podio.com",
+        "https://developers.podio.com/doc",
+        "https://public-api.org/api/428/podio",
+        "https://apis.io/security/podio/podio-authentication",
+        "https://developers.podio.com/doc/oauth-authorization/get-access-token-22359",
+        "https://developers.podio.com/authentication/server_side",
+        "https://developers.podio.com/authentication",
+        "https://apis.io/apis/podio/rest-api",
+        "https://publicapi.dev/podio-api",
+        "https://www.progress.com/podio/documentation/using-podio/ai-and-mcp/podio-mcp-server-integration-guide",
+        "https://www.activepieces.com/mcp/podio"
+    ],
+    "confidence": 1.0,
+    "human_review_required": false
+}

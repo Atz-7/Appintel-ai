@@ -1,0 +1,11 @@
+composio
+composio-openai-agents
+openai-agents
+python-dotenv
+pydantic
+pandas
+httpx
+beautifulsoup4
+tenacity
+tavily-python
+google-genai

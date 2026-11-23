@@ -1,0 +1,35 @@
+{
+    "app_name": "Attio",
+    "category": "CRM & Sales",
+    "description": "Attio is a modern, flexible, and data-driven customer relationship management (CRM) platform that allows revenue teams to build a custom CRM around their unique data model with customizable objects, attributes, lists, and workflows.",
+    "auth_methods": [
+        "API keys",
+        "OAuth 2.0",
+        "Bearer tokens"
+    ],
+    "access_model": "Public self-serve",
+    "api_type": [
+        "REST",
+        "Webhooks"
+    ],
+    "api_breadth": "The REST API provides comprehensive CRUD access to core objects and resources, including records, lists, objects, attributes, tasks, notes, threads, comments, and webhooks. Published whole-API limits are 100 requests per second for reads and 25 requests per second for writes, with additional complexity-based score limits on list queries.",
+    "existing_mcp": "Attio provides an official hosted Model Context Protocol (MCP) server located at mcp.attio.com/mcp. There are also third-party community implementations available, such as kesslerio/attio-mcp-server on GitHub.",
+    "buildability": "High buildability due to comprehensive public REST documentation, open interactive explorers, clear OpenAPI specifications, multi-language SDK support, and flexible authentication methods.",
+    "main_blocker": "Score-based query limits on list queries that grow more expensive as the workspace scales, alongside uniqueness conflicts when configuring webhook subscriptions.",
+    "evidence_urls": [
+        "https://www.coffee.ai/articles/attio-crm-public-api-docs",
+        "https://apis.io/providers/attio",
+        "https://docs.attio.com/rest-api/endpoint-reference/openapi",
+        "https://docs.attio.com/rest-api/overview",
+        "https://docs.textql.com/core/datasources/apis/attio",
+        "https://frontal.so/gtm-apis/crm-apis/attio-api-review",
+        "https://www.revenueflow.com/blog/attio-api",
+        "https://apis.apievangelist.com/store/attio-meta-api",
+        "https://github.com/api-evangelist/attio-com/blob/main/README.md",
+        "https://docs.attio.com/sdk/server/attio-api-token",
+        "https://www.usecarly.com/blog/attio-mcp",
+        "https://github.com/kesslerio/attio-mcp-server"
+    ],
+    "confidence": 0.95,
+    "human_review_required": false
+}

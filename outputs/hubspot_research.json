@@ -1,0 +1,36 @@
+{
+    "app_name": "HubSpot",
+    "category": "CRM & Sales",
+    "description": "HubSpot is a comprehensive CRM, marketing, sales, and service platform designed to help businesses manage customer relationships, inbound marketing, sales pipelines, and customer service operations.",
+    "auth_methods": [
+        "OAuth 2.0",
+        "Bearer tokens",
+        "Service Keys"
+    ],
+    "access_model": "Public self-serve",
+    "api_type": [
+        "REST",
+        "GraphQL",
+        "Webhooks"
+    ],
+    "api_breadth": "HubSpot exposes robust REST and GraphQL APIs covering core CRM objects (contacts, companies, deals, tickets), engagements, marketing, CMS, conversations, and settings. Operations include complete CRUD capabilities, associations, and batch endpoints, with date-based versioning schemes.",
+    "existing_mcp": "HubSpot publishes official MCP servers (including a hosted server at mcp.hubspot.com and a local developer MCP server) offering read and write access to CRM objects.",
+    "buildability": "Extremely practical to build an integration due to high-quality documentation, comprehensive official SDKs, public self-serve access, standard authentication mechanisms, and native official MCP support.",
+    "main_blocker": "Rate limits (such as burst limits ranging from 110 to 190 requests per 10 seconds) and the need to handle scheduled platform API deprecations/version migrations.",
+    "evidence_urls": [
+        "https://apitracker.io/a/hubspot",
+        "https://developers.hubspot.com/docs/api-reference/latest/overview",
+        "https://developers.hubspot.com/docs/api-reference/latest/crm/understanding-the-crm",
+        "https://developers.hubspot.com/docs/developer-tooling/platform/usage-guidelines",
+        "https://community.hubspot.com/t/auth-api-key-vs-oauth/35399",
+        "https://getknit.dev/blog/hubspot-api-key",
+        "https://www.membrain.com/help-center/integrations/hubspot-integration/new-hubspot-api-authentication-oauth",
+        "https://insightsalesglobal.com/blog/hubspot-api-authentication",
+        "https://developers.hubspot.com/docs/cms/start-building/features/data-driven-content/graphql/query-hubspot-data-using-graphql",
+        "https://developers.hubspot.com/docs/cms/start-building/features/data-driven-content/graphql/use-graphql-data-in-your-website-pages",
+        "https://supergood.ai/api-report-card/hubspot",
+        "https://community.hubspot.com/t/unclear-documentation-on-using-graphql-in-hubspot-cards-with-version-2025-2/144019"
+    ],
+    "confidence": 1.0,
+    "human_review_required": false
+}

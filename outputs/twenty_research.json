@@ -1,0 +1,31 @@
+{
+    "app_name": "Twenty",
+    "category": "CRM & Sales",
+    "description": "Twenty is an open-source, self-hostable CRM and platform that provides developer-friendly tools, object declaration, server-side functions, and workspace-generated schema-per-tenant APIs.",
+    "auth_methods": [
+        "Bearer tokens",
+        "API keys",
+        "OAuth 2.1"
+    ],
+    "access_model": "Public self-serve",
+    "api_type": [
+        "REST",
+        "GraphQL",
+        "Webhooks"
+    ],
+    "api_breadth": "Core API (/rest/ and /graphql/) provides CRUD operations on records such as People, Companies, Opportunities, and custom objects. Metadata API (/rest/metadata/ and /metadata/) provides schema management to create, modify, or delete objects, fields, and relations. Rate limits are set to 100 requests per minute and 60 records per batch call.",
+    "existing_mcp": "Third-party MCP server implementation exists (such as jezweb/twenty-mcp), but no official first-party MCP server was found.",
+    "buildability": "Highly buildable. Twenty provides dynamic workspace-specific REST and GraphQL APIs generated directly from the schema, robust batch operation support, and comprehensive developer tooling, though developers must account for workspace-specific endpoints and rate limits.",
+    "main_blocker": null,
+    "evidence_urls": [
+        "https://docs.twenty.com/developers/extend/api",
+        "https://docs.twenty.com/developers/introduction",
+        "https://apis.apievangelist.com/store/twenty-open-api-api",
+        "https://docs.twenty.com/user-guide/data-migration/how-tos/import-data-via-api",
+        "https://github.com/jezweb/twenty-mcp/blob/main/OAUTH.md",
+        "https://docs.twenty.com/l/cs/developers/extend/api",
+        "https://docs.twenty.com/user-guide/integrations-api/apis-overview"
+    ],
+    "confidence": 0.95,
+    "human_review_required": false
+}

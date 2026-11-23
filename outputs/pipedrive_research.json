@@ -1,0 +1,34 @@
+{
+    "app_name": "Pipedrive",
+    "category": "CRM & Sales",
+    "description": "Pipedrive is a web-based Sales CRM and pipeline management tool designed to help sales teams plan their selling processes and manage deals, contacts, leads, and activities.",
+    "auth_methods": [
+        "OAuth 2.0",
+        "API tokens"
+    ],
+    "access_model": "Public self-serve",
+    "api_type": [
+        "REST",
+        "Webhooks"
+    ],
+    "api_breadth": "Comprehensive REST API coverage across deals, contacts, organizations, leads, activities, products, pipelines, stages, notes, and files via v1 and v2 active versions. Lacks coverage for upstream intelligence data like company tech stacks or buying intent.",
+    "existing_mcp": "Both official and third-party MCP servers exist. Pipedrive runs its own official hosted MCP server, while third-party implementations (such as community packages on GitHub and directories) also exist.",
+    "buildability": "High. The application features mature REST endpoints, published OpenAPI 3 specs, official SDKs, OAuth 2.0 support, and developer sandbox accounts.",
+    "main_blocker": null,
+    "evidence_urls": [
+        "https://pipeline.zoominfo.com/sales/pipedrive-api",
+        "https://developers.pipedrive.com/docs/api/v1/Pipelines",
+        "https://developers.pipedrive.com/docs/api/v1",
+        "https://pipedrive.readme.io/docs/pipedrive-api-v2",
+        "https://mindcloud.co/docs/universal/rest/pipedrive/latest/introduction/authentication",
+        "https://www.linkedin.com/posts/crmattribution_pipedrive-oauth-vs-api-key-one-breaks-silently-activity-7515804575954800641-hjld",
+        "https://help.merge.dev/articles/2480814671-pipedrive-how-do-i-link-using-an-api-key",
+        "https://github.com/MarcelloTheArcane/pipedrive-graphql",
+        "https://devcommunity.pipedrive.com/t/pipedrive-graphql-apis/4795",
+        "https://mcp.so/servers/pipedrive-mcp-server",
+        "https://walma.ai/en/mcp-directory/pipedrive",
+        "https://enterprisedna.co/directories/mcp/ckalima-pipedrive-mcp-server"
+    ],
+    "confidence": 0.95,
+    "human_review_required": false
+}

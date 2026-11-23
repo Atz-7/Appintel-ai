@@ -1,0 +1,37 @@
+{
+    "app_name": "Zendesk",
+    "category": "Support & Helpdesk",
+    "description": "Zendesk is a cloud-based customer service software and support ticketing system designed to help businesses manage customer support workflows, track tickets, manage user and organization data, and run multi-channel help centers and messaging.",
+    "auth_methods": [
+        "OAuth 2.0",
+        "API tokens",
+        "Basic authentication",
+        "JWT (Bearer tokens)"
+    ],
+    "access_model": "Public self-serve",
+    "api_type": [
+        "REST",
+        "GraphQL",
+        "Webhooks"
+    ],
+    "api_breadth": "Zendesk offers comprehensive API coverage organized across product capabilities including Ticketing, Help Center, AI Agents, Messaging, Voice (Talk), Sales CRM, and Custom Data. Key resources include tickets, users, organizations, articles, and macros, supporting operations such as CRUD, search, and workflow automation. Note that Support API tokens are being phased out and replaced by OAuth.",
+    "existing_mcp": "Third-party MCP server exists (e.g., Zendesk MCP Server by SShadowS).",
+    "buildability": "Practical to build. Zendesk has extensive, well-documented REST APIs and OAuth support, though developers must migrate away from deprecated API tokens. Third-party MCP implementations also exist to accelerate development.",
+    "main_blocker": "Deprecation and phase-out of legacy Support API tokens requiring OAuth implementation.",
+    "evidence_urls": [
+        "https://www.getmacha.com/blog/zendesk-api-explained",
+        "https://developer.zendesk.com/api-reference",
+        "https://apitracker.io/a/zendesk",
+        "https://developer.zendesk.com/api-reference/introduction/introduction",
+        "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth",
+        "https://www.getmacha.com/blog/zendesk-oauth-now-default-why-matters",
+        "https://developer.zendesk.com/api-reference/introduction/security-and-auth",
+        "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication",
+        "https://developer.zendesk.com/api-reference/sales-crm/search/graphql",
+        "https://n8n.io/integrations/graphql/and/zendesk",
+        "https://www.facebook.com/fb-answers/zendesk-rest-api-documentation",
+        "https://glama.ai/mcp/servers/SShadowS/zendesk-mcp-server"
+    ],
+    "confidence": 0.95,
+    "human_review_required": false
+}

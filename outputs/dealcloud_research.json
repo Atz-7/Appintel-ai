@@ -1,0 +1,35 @@
+{
+    "app_name": "DealCloud",
+    "category": "CRM & Sales",
+    "description": "DealCloud is a flexible CRM and deal management platform used by financial services, investment banking, and private equity industries to track relationships, companies, contacts, and deals.",
+    "auth_methods": [
+        "API Keys",
+        "OAuth 2.0"
+    ],
+    "access_model": "Enterprise-only",
+    "api_type": [
+        "REST",
+        "GraphQL",
+        "Webhooks"
+    ],
+    "api_breadth": "The REST APIs cover Authentication, User Management, Schema metadata, Data manipulation via Cells and Rows, Backups, and Publications. There are also GraphQL capabilities exposed via the platform and MCP servers.",
+    "existing_mcp": "An official MCP server is provided out-of-the-box by DealCloud (Intapp Celeste).",
+    "buildability": "Building a custom integration is straightforward given the detailed REST and GraphQL API documentation, interactive Swagger specifications, and native MCP support, provided the user has proper enterprise licensing and admin permissions enabled.",
+    "main_blocker": "Requires a specific enterprise subscription tier, appropriate administrative privileges, and explicit capability toggling within user management.",
+    "evidence_urls": [
+        "https://api.docs.dealcloud.com/docs",
+        "https://hexdocs.pm/dealcloud/api-reference.html",
+        "https://api.docs.dealcloud.com/docs/data",
+        "https://api.docs.dealcloud.com",
+        "https://api.docs.dealcloud.com/sdk/intapp-rest-client/configuration/authentication",
+        "https://developers.anduintransact.com/docs/step-1-retrieve-credentials-of-3rd-party-apps-7",
+        "https://api.docs.dealcloud.com/docs/apikeys",
+        "https://api.docs.dealcloud.com/mcp/authentication",
+        "https://api.docs.dealcloud.com/docs/schema/metadata/field_types",
+        "https://api.docs.dealcloud.com/docs/schema",
+        "https://api.docs.dealcloud.com/mcp/getting-started",
+        "https://api.docs.dealcloud.com/mcp/tools"
+    ],
+    "confidence": 1.0,
+    "human_review_required": false
+}
