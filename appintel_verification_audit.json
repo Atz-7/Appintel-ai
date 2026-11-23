@@ -1,0 +1,88 @@
+{
+  "verification_date": "2026-11-24",
+  "sample_size": 8,
+  "method": "Manual cross-check against official vendor documentation discovered in this verification pass. This is a small, targeted sample audit, not a 100-app verification. No authenticated API/MCP calls were made.",
+  "results": [
+    {
+      "app": "Slack",
+      "audit_status": "partially_verified",
+      "audit_note": "Official Slack MCP endpoint and Streamable HTTP are confirmed. Current docs require a registered Slack app with fixed app ID; only directory-published or internal apps may use MCP. OAuth consent/scopes apply. Recheck original generic admin-approval wording against workspace policy; MCP does not support SSE or DCR.",
+      "audit_sources": [
+        "https://docs.slack.dev/ai/slack-mcp-server/"
+      ]
+    },
+    {
+      "app": "Google Ads",
+      "audit_status": "partially_verified_conflicting_docs",
+      "audit_note": "Official Google Ads MCP and OAuth setup are confirmed. Current MCP guide states production API access is subject to access level and reports developer-token sunset on 2026-09-09, while the separate REST authorization page still says a developer token is required on every API call. Do not present developer-token requirement as settled until this documentation conflict is resolved. MCP has partial mutations only; it cannot create or manage campaigns, ads, budgets or bids.",
+      "audit_sources": [
+        "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+        "https://developers.google.com/google-ads/api/rest/auth"
+      ]
+    },
+    {
+      "app": "Close",
+      "audit_status": "verified_sample",
+      "audit_note": "Official remote MCP URL, Streamable HTTP, OAuth 2.0 DCR, API-key alternative and three explicit scope levels confirmed. SSE is unsupported.",
+      "audit_sources": [
+        "https://developer.close.com/mcp/"
+      ]
+    },
+    {
+      "app": "Copper",
+      "audit_status": "verified_sample",
+      "audit_note": "Official docs confirm per-user API keys and OAuth 2.0; OAuth application registration requires contacting Copper.",
+      "audit_sources": [
+        "https://developer.copper.com/introduction/authentication.html",
+        "https://developer.copper.com/introduction/oauth/index.html"
+      ]
+    },
+    {
+      "app": "NotebookLM",
+      "audit_status": "verified_with_naming_correction",
+      "audit_note": "Current official API is named Gemini Notebook API. Official MCP endpoint is https://notebook.googleapis.com/mcp; OAuth scope is notebook. Public preview currently requires personal Google account and a prior sign-in to Gemini Notebook; Workspace accounts are unsupported.",
+      "audit_sources": [
+        "https://developers.google.com/notebook/docs/mcp",
+        "https://developers.google.com/notebook/docs/authentication",
+        "https://developers.google.com/notebook/docs/quickstart"
+      ]
+    },
+    {
+      "app": "QuickBooks",
+      "audit_status": "verified_sample",
+      "audit_note": "Intuit docs confirm OAuth 2.0, registered developer app, client ID/secret, scope and redirect URI. No general operational official MCP was established by the collected evidence; keep that distinction.",
+      "audit_sources": [
+        "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/faq.html",
+        "https://developer.intuit.com/app/developer/qbo/docs/develop/authentication-and-authorization/oauth-2.0"
+      ]
+    },
+    {
+      "app": "Meta Ads",
+      "audit_status": "verified_sample_with_access_gate",
+      "audit_note": "Official Meta Marketing API documentation confirms Graph API endpoints for campaign management, ad sets, creatives and insights. App Review/Advanced Access and business verification may be required for permissions/features; system-user tokens and business asset permissions are relevant for server integrations. Rate limits depend on access tier and business use case. No official Meta Ads MCP was established by this evidence.",
+      "audit_sources": [
+        "https://developers.facebook.com/documentation/ads-commerce/marketing-api",
+        "https://developers.facebook.com/docs/business-management-apis/2tier-bm-solution/pre-app-review-development/",
+        "https://developers.facebook.com/docs/business-management-apis/system-users/overview/",
+        "https://developers.facebook.com/docs/graph-api/overview/rate-limiting/"
+      ]
+    },
+    {
+      "app": "YouTube Transcript",
+      "audit_status": "verified_official_api_limitation_identity_ambiguous",
+      "audit_note": "Official YouTube Data API captions.download requires OAuth authorization and permission to edit the video; it does not provide a general method to download captions from arbitrary public videos. The dataset label YouTube Transcript is therefore mapped only to the official captions API capability; third-party transcript providers are outside this verification.",
+      "audit_sources": [
+        "https://developers.google.com/youtube/data/reference/rest/v3/captions/download",
+        "https://developers.google.com/youtube/data/guides/implementation/captions"
+      ]
+    }
+  ],
+  "limitations": [
+    "Google Ads official docs currently conflict on developer-token requirement; unresolved.",
+    "Slack workspace admin approval wording is policy-dependent; only registered app identity and directory-published/internal app eligibility were directly confirmed.",
+    "No live OAuth connections or authenticated API/MCP tool calls were performed.",
+    "Verification of these six records does not validate the remaining 94 records.",
+    "Meta Ads API capability is confirmed, but required App Review/Advanced Access and business verification depend on the permissions and features requested.",
+    "YouTube Transcript is an ambiguous dataset label; official captions.download is restricted to users with edit permission on the video and is not a general public-video transcript API."
+  ]
+}

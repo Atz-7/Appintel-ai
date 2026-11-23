@@ -1,0 +1,68 @@
+{
+  "dataset_apps": 100,
+  "records_in_all_sources": 101,
+  "unique_source_app_names": 101,
+  "canonical_records": 100,
+  "exact_matches_before_alias": 99,
+  "name_aliases_applied": {
+    "QuickBooks Online": "QuickBooks"
+  },
+  "out_of_scope_records_excluded": [
+    {
+      "app_name": "TikTok",
+      "source_file": "appintel_research_batch_02.json"
+    }
+  ],
+  "missing_dataset_apps": [],
+  "duplicate_canonical_names": [],
+  "category_coverage": {
+    "CRM & Sales": 10,
+    "Support & Helpdesk": 10,
+    "Communications & Messaging": 10,
+    "Marketing & Social": 10,
+    "Ecommerce": 10,
+    "Data, SEO & Scraping": 10,
+    "Developer & Infrastructure": 10,
+    "Productivity & Project Management": 10,
+    "Finance & Payments": 10,
+    "AI, Research & Media": 10
+  },
+  "buildability_class_counts": {
+    "High": 74,
+    "Medium": 21,
+    "Low / gated": 5
+  },
+  "confidence_band_counts": {
+    "High": 72,
+    "Mixed / qualitative": 20,
+    "Low": 3,
+    "Medium": 5
+  },
+  "human_review_required_counts": {
+    "False": 8,
+    "True": 92
+  },
+  "evidence_url_count_total": 379,
+  "missing_fields": {
+    "description": [],
+    "auth_methods": [],
+    "access_model": [],
+    "api_type": [],
+    "api_breadth": [],
+    "existing_mcp": [],
+    "buildability": [],
+    "main_blocker": [
+      "Pipedrive",
+      "Twenty",
+      "Podio"
+    ],
+    "evidence_urls": []
+  },
+  "limitations": [
+    "This is structural reconciliation, not a live verification of every URL or credential flow.",
+    "Human-review flags are preserved from source records; 92 of 100 records still require human review.",
+    "The source confidence field mixes numeric scores and qualitative labels; confidence_band is a coarse normalization, not recalibrated accuracy.",
+    "Three source records lack a separately stated main_blocker: Pipedrive, Twenty and Podio.",
+    "The original 8 pipeline reports and 92 later manually assembled/research-batch records have different provenance; source_file preserves this distinction."
+  ]
+}
